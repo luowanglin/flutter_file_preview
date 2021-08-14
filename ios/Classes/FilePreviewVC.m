@@ -22,6 +22,7 @@
     self.navigationItem.rightBarButtonItem = closeItem;
     self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    [self.navigationController.navigationBar setTranslucent:NO];
     ///用于适配文档文件
     _previewVC = [[QLPreviewController alloc]init];
     _previewVC.dataSource = self;
